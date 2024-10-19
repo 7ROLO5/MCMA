@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalles del producto en MDMA.">
+    <meta name="keywords" content="producto, tienda, detalles">
+    <title>MDMA - Detalle del Producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">MDMA</div>
+            <div class="user-area">
+                <button id="login-btn" onclick="toggleLogin()">Iniciar Sesión</button>
+                <span id="user-info" style="display:none;" aria-live="polite"></span>
+                <button id="logout-btn" style="display:none;" onclick="logout()">Cerrar Sesión</button>
+            </div>
+            <input type="text" id="search-bar" aria-label="Buscar productos..." placeholder="Buscar productos..." class="search-bar">
+            <button class="search-btn" aria-label="Buscar" onclick="searchProduct()">Buscar</button>
+            <a href="#" id="cart-link" aria-label="Ver carrito de compras">Carrito (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="product-detail" id="product-detail" aria-labelledby="product-detail-title">
+            <!-- Los detalles del producto se cargarán aquí -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MDMA. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
